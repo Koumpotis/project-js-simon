@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simon</title>
+    <title>Simon Says</title>
 
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <section id="content">
-      <h1>Simon</h1>
+      <h1>Simon Says</h1>
 
       <div class="simon-container">
-        <div class="simon-button green"></div>
-        <div class="simon-button red"></div>
-        <div class="simon-button yellow"></div>
-        <div class="simon-button blue"></div>
+        <div id="0" class="simon-button green"></div>
+        <div id="1" class="simon-button red"></div>
+        <div id="2" class="simon-button yellow"></div>
+        <div id="3" class="simon-button blue"></div>
+        <div class="controls">
+          <div class="start inline">START</div>
       </div>
+      </div>
+      <p id="start" onclick="myfucntion()">Click me to change my color</p>
+      <script>
+        function myFunction() {
+            document.getElementById("start").color = "red";
+        }
+        </script>
+
     </section>
+    <p id="start" onclick="myfucntion()">Click me to change my color</p>
+    <script>
+      function myFunction() {
+          document.getElementById("0").style.color = "white";
+      }
+      </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
